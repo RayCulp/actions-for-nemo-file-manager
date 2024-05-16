@@ -8,3 +8,13 @@ As a person who recently began switching from Windows to Ubuntu, one of the most
 For example, [JAM Software TreeSize](https://www.jam-software.com/treesize_free/features.shtml) is a very nice Windows utility that allows you to quickly analyze disk and folder space usage. One decent Linux alternative (there are several) is [QDirStat](https://github.com/shundhammer/qdirstat). However, unlike TreeSize, QDirStat does not add any context menu items to the file manager, so in order to use it, you must start the program manually and then navigate to the drive or folder you would like to analyze from inside of the program.
 
 This repository contains a collection of Nemo Actions and associated bash scripts that aim to increase efficiency by adding context menu items for a range of programs, such as QDirStat, Bleachbit and Thunderbird, that can perform actions on files and folders.
+
+## Nemo Actions in this repository
+### qdirstat.nemo_action
+Analyzes selected drive or folder using QDirStat.
+### reduce_50.nemo_action
+Reduce the size of the selected image file by 50%. Not my Action. Simple example I got somewhere.
+### shred_with_bleachbit.nemo_action
+Destroy selected files and folders using Bleachbit.
+### thunderbird.nemo_action
+Send selected files via email using Thunderbird.
