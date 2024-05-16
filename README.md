@@ -11,7 +11,7 @@ This repository contains a collection of Nemo Actions and associated bash script
 
 ## Nemo Actions in this repository
 ### qdirstat.nemo_action
-Analyzes selected drive or folder using QDirStat.
+Analyze space usage of selected drive or folder using QDirStat.
 ### reduce_50.nemo_action
 Reduce the size of the selected image file by 50%. Not my Action. Simple example I got somewhere.
 ### shred_with_bleachbit.nemo_action
