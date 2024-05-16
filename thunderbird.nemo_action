@@ -1,0 +1,9 @@
+[Nemo Action]
+Name=Send by email
+Comment=Send files using Thunderbird
+Exec=thunderbird -compose to=,"attachment='%U'"
+Icon-Name=thunderbird
+Selection=notnone
+Extensions=nodirs;
+Separator=,
+EscapeSpaces=false

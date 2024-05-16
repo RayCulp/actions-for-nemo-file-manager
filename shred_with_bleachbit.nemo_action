@@ -1,0 +1,11 @@
+[Nemo Action]
+Active=true
+Name=Shred with Bleachbit
+Comment=Destroy files and folders securely with Bleachbit
+Exec=<shred_with_bleachbit/shred_with_bleachbit.sh %F>
+Icon-Name=bleachbit
+Selection=notnone
+Extensions=any;
+Terminal=true
+EscapeSpaces=false
+Quote=double
