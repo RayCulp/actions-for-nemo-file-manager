@@ -16,7 +16,7 @@
 
 # Propt the user to confirm file destruction
     
-	zenity  --question --title="Confirm file destruction" --text="Are you sure you want to permanently destroy these files/folders?"
+	zenity  --question --title="Confirm file destruction" --text="<big>Are you sure you want to permanently destroy these files/folders?</big>"
 
 # Check the exit status of Zenity command
 
