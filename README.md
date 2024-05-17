@@ -14,7 +14,7 @@ This repository contains a collection of Nemo Actions that aim to increase effic
 
 ## How do I install a Nemo Action?
 
-To install an Action, download the __*.nemo_action__ file and save it in the folder __/home/user001/.local/share/nemo/actions__. If the action has an associated bash script, download the folder containing the bash script and save it in the same folder. Your folder will then look something like this:
+To install an Action, download the __*.nemo_action__ file and save it in the folder __/home/<your user name>/.local/share/nemo/actions__. If the action has an associated bash script, download the folder containing the bash script and save it in the same folder. Your folder will then look something like this:
 
 ![image](https://github.com/RayCulp/actions-for-nemo-file-manager/assets/7621330/946dd48c-2290-49b3-9e0b-3e7f7d155928)
 
