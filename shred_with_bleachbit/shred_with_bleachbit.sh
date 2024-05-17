@@ -16,9 +16,9 @@
 
 # Propt the user to confirm file destruction
     
-	zenity  --question --title="Confirm file destruction" --text="<big>Are you sure you want to permanently destroy these files/folders?</big>"
+	zenity --question --icon-name=dialog-warning --title="Confirm file destruction" --text="<big>Are you sure you want to permanently destroy these files / folders?</big>"
 
-# Check the exit status of Zenity command
+# Check the exit status of Zenity command. If the user confirmed, shred the files.
 
     if [ $? -eq 0 ]; then
         # zenity --info --text="The user chose Yes" --title="Result"

@@ -1,0 +1,12 @@
+[Nemo Action]
+Active=true
+Name=Securely move files and folders
+Comment=Copy files to new location, then destroy original files with Bleachbit
+Exec=<securely_move/securely_move.sh %F>
+Icon-Name=bleachbit
+Selection=notnone
+Extensions=any;
+Terminal=true
+EscapeSpaces=false
+Quote=double
+Dependencies=bleachbit;zenity
