@@ -26,15 +26,14 @@ Comments, suggestions and pull requests are always welcome.
 
 |   |   |
 |:---|:---|
-| ![image](https://github.com/RayCulp/actions-for-nemo-file-manager/assets/7621330/852bed00-e05f-4190-b078-c2077e94bd73) | __NOTICE__ <br/>Possible irreparable data loss. Some of the bash scripts in this repository use Bleachbit to destroy files permanently. Although I have exercised the greatest care in preparing these Actions and scripts (I use them myself on a daily basis and don't want my own data to get destroyed by mistake), I nevertheless cannot guarantee that nothing will ever go wrong. I take no responsibility whatsoever for any loss of data that might occur as a result of using these Actions and scripts.|
+| ![image](https://github.com/RayCulp/actions-for-nemo-file-manager/assets/7621330/852bed00-e05f-4190-b078-c2077e94bd73) | __NOTICE__ <br/>Some of the Nemo Actions in this repository use Bleachbit to delete files permanently. Although I have taken the greatest care in preparing these Actions (I use them myself on a daily basis), I nevertheless cannot guarantee that nothing will ever go wrong. I take no responsibility whatsoever for any loss of data that might occur as a result of using these Actions.|
 
 ## Nemo Actions in this repository
 
 | Action name      | What does it do?      |
 |:------------- |:------------- |
-| qdirstat.nemo_action | Analyze space usage of selected drive or folder using QDirStat. |
-| reduce_50.nemo_action | Reduce the size of the selected image file by 50%. Not my Action. Simple example I got somewhere. |
-| securely_move.nemo_action | Securely move files and folders to a new location. Original files are destroyed using Bleachbit, so they cannot be recovered. |
-| shred_with_bleachbit.nemo_action | Destroy selected files and folders using Bleachbit. |
+| qdirstat.nemo_action | Analyze disk space usage for the selected folder or drive with QDirStat. |
+| securely_move.nemo_action | Copies files and folders to a new location, then shreds original files and folders using Bleachbit. |
+| shred_with_bleachbit.nemo_action | Shred selected files and folders using Bleachbit. |
 | thunderbird.nemo_action | Send selected files via email using Thunderbird. |
 
