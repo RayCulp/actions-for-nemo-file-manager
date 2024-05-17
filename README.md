@@ -22,6 +22,8 @@ Comments, suggestions and pull requests are always welcome.
 Analyze space usage of selected drive or folder using QDirStat.
 ### reduce_50.nemo_action
 Reduce the size of the selected image file by 50%. Not my Action. Simple example I got somewhere.
+### securely_move.nemo_action
+Securely move files and folders to a new location. Original files are destroyed using Bleachbit, so they cannot be recovered.
 ### shred_with_bleachbit.nemo_action
 Destroy selected files and folders using Bleachbit.
 ### thunderbird.nemo_action
