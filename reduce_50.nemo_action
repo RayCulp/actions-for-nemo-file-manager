@@ -1,9 +1,0 @@
-[Nemo Action]
-Active=true
-Name=Reduce Image 50%
-Comment=Reduce the size of the image by 50%
-Exec=ffmpeg -i %F -vf scale=iw/2:-1 %P/size_reduced_%f
-Icon-Name=image
-Selection=any;
-Extensions=jpg;jpeg;png;bmp;gif;tiff;raw;
-Terminal=true
