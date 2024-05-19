@@ -1,0 +1,12 @@
+[Nemo Action]
+Active=true
+Name=7Zip extract to folder(s)
+Comment=Extract each selected archive to its own folder
+Exec=<7zip_extract_to_folders/7zip_extract_to_folders.sh %F>
+Icon-Name=7zip
+Selection=any
+Extensions=zip;7z;
+Terminal=false
+EscapeSpaces=false
+Quote=double
+Dependencies=7z;zenity
