@@ -16,7 +16,7 @@
 
 # Propt the user to confirm file destruction
     
-	zenity --question --icon-name=dialog-warning --title="Confirm file destruction" --text="<big>Are you sure you want to permanently destroy these files / folders?</big>"
+	zenity --question --icon-name=dialog-warning --title="Confirm file destruction" --text="Are you sure you want to permanently destroy these files / folders?"
 
 # Check the exit status of Zenity command. If the user confirmed, shred the files.
 
@@ -29,4 +29,4 @@
 
 # Press any key to continue
 
-    read -n 1 -s -r -p "Press any key to continue"; echo
+    # read -n 1 -s -r -p "Press any key to continue"; echo

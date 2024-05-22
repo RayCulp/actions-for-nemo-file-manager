@@ -17,7 +17,7 @@
 
 # Zenity dialog to confirm before starting the script
     
-    zenity --question --icon-name=dialog-warning --title="Confirm action" --text="<big>This script will copy files / folders to a new location, then securely destroy the original files / folders. Are you sure you wish to continue?</big>" || exit
+    zenity --question --icon-name=dialog-warning --title="Confirm action" --text="This script will copy files / folders to a new location, then securely destroy the original files / folders. Are you sure you wish to continue?" || exit
 
 
 # Propt the user for new location

@@ -32,9 +32,9 @@ Comments, suggestions and pull requests are always welcome.
 
 | Action name      | What does it do?      |
 |:------------- |:------------- |
-| 7zip_extract_to_folders | Extract one or more comressed archives (zip or 7zip) to individual folders |
+| 7zip_extract_to_folders | Extract one or more comressed archives (zip or 7zip) to individual folders using 7Zip. |
 | qdirstat.nemo_action | Analyze disk space usage for the selected folder or drive with QDirStat. |
-| securely_move.nemo_action | Copies files and folders to a new location, then shreds original files and folders using Bleachbit. |
+| securely_move.nemo_action | Copy files and folders to a new location, then shred original files and folders using Bleachbit. |
 | shred_with_bleachbit.nemo_action | Shred selected files and folders using Bleachbit. |
 | thunderbird.nemo_action | Send selected files via email using Thunderbird. |
 
