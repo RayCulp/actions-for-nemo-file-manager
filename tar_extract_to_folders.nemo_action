@@ -1,0 +1,12 @@
+[Nemo Action]
+Active=true
+Name=Extract archive(s) to folder(s)
+Comment=Extract each selected tar.gz archive to its own folder
+Exec=<tar_extract_to_folders/tar_extract_to_folders.sh %F>
+Icon-Name=tar_extract_to_folders/tar
+Selection=notnone
+Extensions=gz;bz2;
+Terminal=false
+EscapeSpaces=false
+Quote=double
+Dependencies=tar;zenity

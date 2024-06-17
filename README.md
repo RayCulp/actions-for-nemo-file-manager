@@ -1,6 +1,6 @@
 # Actions for [Nemo](https://en.wikipedia.org/wiki/Nemo_(file_manager)) file manager
 ## What is Nemo?
-Nemo is the official file manager of the Cinnamon desktop environment for Linux. It is used, for example, in the Linux distro [Linux Mint](https://www.linuxmint.com/). Nemo can also be [installed on Ubuntu](https://itsfoss.com/install-nemo-file-manager-ubuntu/). 
+Nemo is the official file manager of the [Cinnamon](https://fosspost.org/cinnamon-desktop) desktop environment for Linux. It is used, for example, in the Linux distro [Linux Mint](https://www.linuxmint.com/). Nemo can also be [installed on Ubuntu](https://itsfoss.com/install-nemo-file-manager-ubuntu/). 
 
 
 ## What are Nemo Actions?
@@ -30,11 +30,13 @@ Comments, suggestions and pull requests are always welcome.
 
 ## Nemo Actions in this repository
 
-| Action name      | What does it do?      |
-|:------------- |:------------- |
-| 7zip_extract_to_folders | Extract one or more comressed archives (zip or 7zip) to individual folders using 7Zip. |
-| qdirstat.nemo_action | Analyze disk space usage for the selected folder or drive with QDirStat. |
-| securely_move.nemo_action | Copy files and folders to a new location, then shred original files and folders using Bleachbit. |
-| shred_with_bleachbit.nemo_action | Shred selected files and folders using Bleachbit. |
-| thunderbird.nemo_action | Send selected files via email using Thunderbird. |
+| Action name | What does it do? | Dependencies |
+|:------------- |:------------- |:------------- |
+| 7zip_extract_to_folders | Extract one or more comressed archives (zip or 7zip) to individual folders using 7Zip. | 7Zip, Zenity |
+| diffpdf.nemo_action | Visually compare two PDFs using DiffPDF | DiffPDF |
+| qdirstat.nemo_action | Analyze disk space usage for the selected folder or drive using QDirStat. | QDirStat |
+| securely_move.nemo_action | Copy files and folders to a new location, then shred original files and folders using Bleachbit. | BleachBit, Zenity |
+| shred_with_bleachbit.nemo_action | Shred selected files and folders using Bleachbit. | BleachBit, Zenity |
+| tar_extract_to_folders.nemo_action | Extract one or more comressed archives () to individual folders using 7Zip. | tar (installed by default on all Linux systems), Zenity |
+| thunderbird.nemo_action | Send selected files via email using Thunderbird. | Thunderbird |
 

@@ -1,0 +1,12 @@
+[Nemo Action]
+Active=true
+Name=Compare PDFs with DiffPDF
+Comment=Compare two selected PDFs using DiffPDF
+Exec=diffpdf %F
+Icon-Name=diffpdf/diffpdf
+Selection=2
+Extensions=pdf;
+Terminal=false
+EscapeSpaces=false
+Quote=double
+Dependencies=diffpdf;
