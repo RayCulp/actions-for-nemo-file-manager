@@ -26,7 +26,7 @@ Comments, suggestions and pull requests are always welcome.
 
 |   |   |
 |:---|:---|
-| ![image](https://github.com/RayCulp/actions-for-nemo-file-manager/assets/7621330/852bed00-e05f-4190-b078-c2077e94bd73) | __NOTICE__ <br/>Some of the Nemo Actions in this repository use Bleachbit to delete files permanently. Although I have taken the greatest care in preparing these Actions (I use them myself on a daily basis), I nevertheless cannot guarantee that nothing will ever go wrong. I take no responsibility whatsoever for any loss of data that might occur as a result of using these Actions.|
+| ![image](https://github.com/RayCulp/actions-for-nemo-file-manager/assets/7621330/852bed00-e05f-4190-b078-c2077e94bd73) | __NOTICE__ <br/>Some of the Nemo Actions in this repository use Bleachbit to delete files permanently. Although I have taken the greatest care in preparing these Actions, I cannot guarantee that nothing will ever go wrong. I take no responsibility for any loss of data that might occur as a result of using these Actions.|
 
 ## Nemo Actions in this repository
 
