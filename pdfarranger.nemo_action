@@ -1,0 +1,12 @@
+[Nemo Action]
+Active=true
+Name=Combine PDFs with PDF-Arranger
+Comment=Combine selected PDFs using PDF-Arranger
+Exec=pdfarranger %F
+Icon-Name=pdfarranger/pdfarranger
+Selection=m
+Extensions=pdf;
+Terminal=false
+EscapeSpaces=false
+Quote=double
+Dependencies=pdfarranger;

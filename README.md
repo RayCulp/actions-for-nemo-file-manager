@@ -8,7 +8,7 @@ Nemo [Actions](https://www.youtube.com/watch?v=csbMSmjGmPo) are scripts that ext
 
 As someone who recently began migrating from Windows to Linux, one of the most puzzling things about Linux was how empty the context menu of the file manager remained, even after I had installed a bunch of programs that would have certainly added context menu items to Windows Explorer. 
 
-For example, [JAM Software TreeSize](https://www.jam-software.com/treesize_free/features.shtml) is a very nice Windows utility that allows you to quickly analyze disk and folder space usage. One decent Linux alternative (there are several) is [QDirStat](https://github.com/shundhammer/qdirstat). But unlike TreeSize, QDirStat does not add any context menu items to the file manager, so in order to use it, you have to start the program manually and then navigate to the drive or folder you would like to analyze from inside of the program.
+For example, [JAM Software TreeSize](https://www.jam-software.com/treesize_free/features.shtml) is a very useful Windows utility that allows you to quickly analyze disk and folder space usage. One good Linux alternative (there are several) is [QDirStat](https://github.com/shundhammer/qdirstat). But unlike TreeSize, QDirStat does not add any context menu items to the file manager, so in order to use it, you have to start the program manually and then navigate to the drive or folder you would like to analyze from inside of the program.
 
 This repository contains a collection of Nemo Actions that aim to increase efficiency by adding missing context menu items for a range of programs that perform actions on files and folders, such as QDirStat, Bleachbit and Thunderbird.
 
@@ -32,11 +32,12 @@ Comments, suggestions and pull requests are always welcome.
 
 | Action name | What does it do? | Dependencies |
 |:------------- |:------------- |:------------- |
-| 7zip_extract_to_folders | Extract one or more comressed archives (zip or 7zip) to individual folders using 7Zip. | 7Zip, Zenity |
-| diffpdf.nemo_action | Visually compare two PDFs using DiffPDF | DiffPDF |
-| qdirstat.nemo_action | Analyze disk space usage for the selected folder or drive using QDirStat. | QDirStat |
-| securely_move.nemo_action | Copy files and folders to a new location, then shred original files and folders using Bleachbit. | BleachBit, Zenity |
-| shred_with_bleachbit.nemo_action | Shred selected files and folders using Bleachbit. | BleachBit, Zenity |
-| tar_extract_to_folders.nemo_action | Extract one or more comressed archives () to individual folders using 7Zip. | tar (installed by default on all Linux systems), Zenity |
-| thunderbird.nemo_action | Send selected files via email using Thunderbird. | Thunderbird |
+| 7zip_extract_to_folders | Extract one or more comressed archives (zip or 7zip) to individual folders using 7Zip. | 7Zip (`sudo apt install p7zip-full`)<br>Zenity (`sudo apt install zenity`) |
+| diffpdf.nemo_action | Visually compare two PDFs using DiffPDF | DiffPDF (`sudo apt install diffpdf`) |
+| pdfarranger.nemo_action | Combine multiple PDFs using PDF-Arranger | PDF-Arranger (follow directions here: [https://github.com/pdfarranger/pdfarranger](https://github.com/pdfarranger/pdfarranger))|
+| qdirstat.nemo_action | Analyze disk space usage for the selected folder or drive using QDirStat. | QDirStat (`sudo apt install qdirstat`)|
+| securely_move.nemo_action | Copy files and folders to a new location, then shred original files and folders using Bleachbit. | BleachBit (install via app store (may be outdated), or download latest version here [https://www.bleachbit.org/download/linux](https://www.bleachbit.org/download/linux))</br>Zenity (`sudo apt install zenity`)|
+| shred_with_bleachbit.nemo_action | Shred selected files and folders using Bleachbit. | BleachBit (install via app store (may be outdated), or download latest version here [https://www.bleachbit.org/download/linux](https://www.bleachbit.org/download/linux))</br>Zenity (`sudo apt install zenity`) |
+| tar_extract_to_folders.nemo_action | Extract one or more comressed `*.tar.gz` or `*.tar.bz2` archives to individual folders using 7Zip. | tar (installed by default on all Linux systems)</br>Zenity (`sudo apt install zenity`) |
+| thunderbird.nemo_action | Send selected files via email using Thunderbird. | Thunderbird (`sudo apt install thunderbird`) |
 
