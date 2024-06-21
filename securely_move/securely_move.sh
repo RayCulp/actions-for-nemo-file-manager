@@ -28,13 +28,64 @@
 # Copy files and folders to new location
 
     for file in "$@"; do
-        cp -r "$file" "$folder"
+
+    # Get the basename of the file
+
+        filename=$(basename "$file")
+
+    # Check whether file already exists in the destination
+
+        if [ -e "$folder/$filename" ]; then
+
+        # Ask the user what to do
+
+            response=$(zenity \
+            --list --title="File $filename already exists in target folder" \
+            --text "The file $filename already exists in the target folder. What you would like to do?" \
+            --radiolist \
+            --column "Select" \
+            --column "action" \
+            FALSE "Overwrite" \
+            FALSE "Rename" \
+            FALSE "Skip" \
+            FALSE "Abort")
+            
+        # Check which action the user selected
+
+            case "$response" in
+
+            (Overwrite)
+                cp -r "$file" "$folder"
+                bleachbit --shred "$file"
+                zenity --info --text="File $filename overwritten.."
+                ;;
+            (Rename)
+                extension="${filename##*.}"
+                filenamefirstpart="${filename%.*}"
+                datetime=$(date +%Y%m%d%H%M%S) # This will format the date and time as YYYYMMDDHHMMSS
+                newname=$(zenity --entry \
+                    --title="Rename file" \
+                    --text="Enter a new name for the file (including extension):" \
+                    --entry-text "$filenamefirstpart-$datetime.$extension")
+                cp -r "$file" "$folder/$newname"
+                bleachbit --shred "$file"
+                zenity --info --text="File $filename renamed to $newname."
+                ;;
+            (Skip)
+                zenity --info --text="File $filename was skipped."
+                ;;
+            (Abort)
+                zenity --info --text="Operation aborted."
+                exit 1
+                ;;
+            esac
+
+        else
+            cp -r "$file" "$folder"
+        fi
+
     done
-
-# Now shred the original files
-
-    bleachbit --shred "$@"
 
 # Press any key to continue
 
-    read -n 1 -s -r -p "Press any key to continue"; echo
+    # read -n 1 -s -r -p "Press any key to continue"; echo
