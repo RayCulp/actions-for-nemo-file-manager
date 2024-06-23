@@ -1,0 +1,12 @@
+[Nemo Action]
+Active=true
+Name=QDirStat here
+Comment=Analyze disk / folder usage with QDirStat
+Exec=qdirstat %F
+Icon-Name=qdirstat/qdirstat
+Selection=none
+Extensions=dir;
+Terminal=false
+EscapeSpaces=false
+Quote=double
+Dependencies=qdirstat;
