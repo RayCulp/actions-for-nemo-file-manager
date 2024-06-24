@@ -82,6 +82,7 @@
 
         else
             cp -r "$file" "$folder"
+            bleachbit --shred "$file"
         fi
 
     done
