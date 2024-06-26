@@ -4,7 +4,7 @@
     
     # exec 2> ./trace$$.log # Redirect errors to trace log
     # or
-    # exec >& ~/Documents/trace$$.log 2>&1 # Redirect all output to trace log
+    # exec >& ~/Documents/securely_move$$.log 2>&1 # Redirect all output to trace log
     # set -x
 
 # Check if an argument was provided
