@@ -4,8 +4,8 @@
     
     # exec 2> ./trace$$.log # Redirect errors to trace log
     # or
-    exec >& ~/Documents/pdf_print$$.log 2>&1 # Redirect all output to trace log
-    set -x
+    # exec >& ~/Documents/pdf_print$$.log 2>&1 # Redirect all output to trace log
+    # set -x
 
 # Check if an argument was provided
 
