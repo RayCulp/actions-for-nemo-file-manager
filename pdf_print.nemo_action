@@ -1,0 +1,12 @@
+[Nemo Action]
+Active=true
+Name=Print PDF directly
+Comment=Print PDF directly with standard printer
+Exec=<pdf_print/pdf_print.sh %F>
+Icon-Name=diffpdf/diffpdf
+Selection=any
+Extensions=pdf;
+Terminal=true
+EscapeSpaces=false
+Quote=double
+Dependencies=
