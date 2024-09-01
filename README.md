@@ -32,7 +32,7 @@ Comments, suggestions and pull requests are always welcome.
 
 | Action name | What does it do? | Dependencies |
 |:------------- |:------------- |:------------- |
-| 7zip_extract_to_folders | Extract one or more comressed archives (zip or 7zip) to individual folders using 7Zip. | 7Zip (`sudo apt install p7zip-full`)<br>Zenity (`sudo apt install zenity`) |
+| 7zip_extract_to_folders | Extract one or more compressed archives (zip or 7zip) to individual folders using 7Zip. | 7Zip (`sudo apt install p7zip-full`)<br>Zenity (`sudo apt install zenity`) |
 | diffpdf.nemo_action | Visually compare two PDFs using DiffPDF | DiffPDF (`sudo apt install diffpdf`) |
 | ocr_pdf.nemo_action | OCR one or more PDFs using Tesseract and OCRmyPDF | Tesseract (https://lindevs.com/install-tesseract-ocr-on-ubuntu/), OCRmyPDF (https://ocrmypdf.readthedocs.io/en/latest/installation.html) |
 | pandoc_md_to_odt.nemo_action | Convert one or more Markdown files to OpenDocument Text format using Pandoc | Pandoc https://github.com/jgm/pandoc/releases |
