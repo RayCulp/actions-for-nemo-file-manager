@@ -1,0 +1,12 @@
+[Nemo Action]
+Active=true
+Name=OCR PDF
+Comment=OCR a PDF file using ocrmypdf
+Exec=<ocr_pdf/ocr_pdf.sh %F>
+Icon-Name=
+Selection=notnone
+Extensions=pdf;
+Terminal=true
+EscapeSpaces=false
+Quote=double
+Dependencies=ocrmypdf;

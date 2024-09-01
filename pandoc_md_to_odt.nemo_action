@@ -1,0 +1,12 @@
+[Nemo Action]
+Active=true
+Name=Covert Markdown to OpenDocument
+Comment=Convert Markdown to OpenDocument using Pandoc
+Exec=<pandoc_md_to_odt/pandoc_md_to_odt.sh %F>
+Icon-Name=pandoc_md_to_odt/pandoc
+Selection=notnone
+Extensions=md;
+Terminal=false
+EscapeSpaces=false
+Quote=double
+Dependencies=pandoc;rename;

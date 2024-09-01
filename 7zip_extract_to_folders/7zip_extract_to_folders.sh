@@ -35,11 +35,11 @@
 
         mkdir "$target_folder"
 
-        7z x "$full_file_path" -o"$target_folder/"
+        7z x -bsp1 "$full_file_path" -o"$target_folder/"
 
     done
 
 
 # Press any key to continue
 
-    # read -n 1 -s -r -p "Press any key to continue"; echo
+    read -n 1 -s -r -p "Press any key to continue"; echo
