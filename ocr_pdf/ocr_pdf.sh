@@ -14,6 +14,16 @@
         exit 1
     fi
 
+# Ask user for confirmation to continue
+    
+	zenity  --question --title="OCR PDFs?" --text="Do you want to OCR this/these PDFs?"
+
+# Check the exit status of Zenity command
+
+    if [ $? -eq 1 ]; then
+        exit 0
+    fi
+
 # Ask user whether to force ocr
     
 	zenity  --question --title="Force OCR?" --text="Force OCR (redo OCR even if text is already present)?"
