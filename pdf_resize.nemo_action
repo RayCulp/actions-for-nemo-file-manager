@@ -1,12 +1,12 @@
 [Nemo Action]
 Active=true
-Name=OCR PDF(s)
-Comment=OCR one or more PDF files using ocrmypdf
-Exec=<ocr_pdf/ocr_pdf.sh %F>
+Name=Resize PDF(s)
+Comment=Resize one more PDFs using GhostScript
+Exec=<pdf_resize/pdf_resize.sh %F>
 Icon-Name=
 Selection=notnone
 Extensions=pdf;
 Terminal=true
 EscapeSpaces=false
 Quote=double
-Dependencies=ocrmypdf;
+Dependencies=gs;

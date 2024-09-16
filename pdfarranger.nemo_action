@@ -1,7 +1,7 @@
 [Nemo Action]
 Active=true
 Name=Combine with PDF-Arranger
-Comment=Combine selected PDFs or images using PDF-Arranger
+Comment=Open one or more PDFs or images in PDF-Arranger
 Exec=pdfarranger %F
 Icon-Name=pdfarranger/pdfarranger
 Selection=notnone
