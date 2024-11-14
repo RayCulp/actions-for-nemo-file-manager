@@ -1,5 +1,5 @@
 [Nemo Action]
-Name=Send by email
+Name=Send using Thunderbird
 Comment=Send files using Thunderbird
 Exec=thunderbird -compose to=,"attachment='%U'"
 Icon-Name=thunderbird

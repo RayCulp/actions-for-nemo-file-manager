@@ -1,7 +1,7 @@
 [Nemo Action]
 Active=true
-Name=Resize PDF(s)
-Comment=Resize one more PDFs using GhostScript
+Name=Resize PDFs using GhostScript
+Comment=Resize one more PDF files using GhostScript
 Exec=<pdf_resize/pdf_resize.sh %F>
 Icon-Name=
 Selection=notnone

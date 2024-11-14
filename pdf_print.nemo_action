@@ -1,12 +1,12 @@
 [Nemo Action]
 Active=true
-Name=Print PDF directly
-Comment=Print PDF directly with standard printer
+Name=Print PDFs using default printer
+Comment=Print one or more PDF files directly using the default system printer
 Exec=<pdf_print/pdf_print.sh %F>
 Icon-Name=pdf_print/pdf_print
 Selection=notnone
 Extensions=pdf;
-Terminal=false
+Terminal=true
 EscapeSpaces=false
 Quote=double
 Dependencies=

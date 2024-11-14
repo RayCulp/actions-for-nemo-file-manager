@@ -4,7 +4,7 @@
     
     # exec 2> ./trace$$.log # Redirect errors to trace log
     # or
-    # exec >& ~/Documents/ocr_pdf$$.log 2>&1 # Redirect all output to trace log
+    # exec >& ~/Documents/ocr_image$$.log 2>&1 # Redirect all output to trace log
     # set -x
 
 # Check if an argument was provided
@@ -16,34 +16,12 @@
 
 # Ask user for confirmation to continue
     
-	zenity  --question --title="OCR PDFs?" --text="Do you want to OCR this/these PDFs?"
+	zenity  --question --title="OCR images" --text="Do you want to OCR this/these images?"
 
 # Check the exit status of Zenity command
 
     if [ $? -eq 1 ]; then
         exit 0
-    fi
-
-# Ask user whether to force ocr
-    
-	zenity  --question --title="Force OCR?" --text="Force OCR even if text is already present?"
-
-# Check the exit status of Zenity command
-
-    if [ $? -eq 0 ]; then
-        force_ocr="--force-ocr"
-    fi
-
-# Propt the user to confirm an action
-    
-	zenity  --question --title="Overwrite original?" --text="Overwrite original file(s)?"
-
-# Check the exit status of Zenity command
-
-    if [ $? -eq 0 ]; then
-        new_file_extension=".pdf"
-    else
-        new_file_extension="-ocr.pdf"
     fi
 
 # Select langauge
@@ -65,10 +43,10 @@
 
     case $Selectedlanguage in
         "English")
-            ocr_language="--language eng"
+            ocr_language="-l eng"
             ;;
         "German")
-            ocr_language="--language deu"
+            ocr_language="-l deu"
             ;;
         *)
             echo "Invalid value for MyString. Please use 'String1' or 'String2'."
@@ -85,8 +63,11 @@
         #echo "No option was selected."
     #fi
 
+# Set new file extensino
 
-# Loop through the list of files provided in the argument, OCR using ocrmypdf
+    $new_file_extension=".txt"
+
+# Loop through the list of files provided in the argument, OCR using tesseract
 
     for full_file_path in "$@"; do
 
@@ -98,7 +79,7 @@
 
         file_path=$(dirname -- "$full_file_path")
 
-        ocrmypdf "$full_file_path" "$file_path/$filename_without_extension$new_file_extension" $force_ocr $ocr_language
+        tesseract "$full_file_path" "$file_path/$filename_without_extension$new_file_extension" $ocr_language
 
     done
 

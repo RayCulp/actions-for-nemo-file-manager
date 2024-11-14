@@ -1,0 +1,12 @@
+[Nemo Action]
+Active=true
+Name=OCR image(s)
+Comment=OCR one or more image files using Tesseract
+Exec=<ocr_image/ocr_image.sh %F>
+Icon-Name=
+Selection=notnone
+Extensions=jpg;png;jpeg;
+Terminal=true
+EscapeSpaces=false
+Quote=double
+Dependencies=tesseract;

@@ -1,7 +1,7 @@
 [Nemo Action]
 Active=true
-Name=Extract archive(s) to folder(s)
-Comment=Extract each selected tar.gz archive to its own folder
+Name=Extract to separate folders using tar
+Comment=Extract each selected tar.gz archive to a separate folder
 Exec=<tar_extract_to_folders/tar_extract_to_folders.sh %F>
 Icon-Name=tar_extract_to_folders/tar
 Selection=notnone

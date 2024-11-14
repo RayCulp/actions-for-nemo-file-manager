@@ -20,10 +20,10 @@
 
 # Determine whether a default printer is set or not
 
-    if [[ $default_printer == *"system default destination: "* ]]; then
+    if ! [[ $default_printer == *"system default destination: "* ]]; then
         # echo "Default printer is set: ${default_printer#*: }"
         # zenity --info --text="Default printer is set: ${default_printer#*: }" --title="Default printer found"
-    else
+    # else
         # echo "No default printer set."
         zenity --error --text="No default printer is set, or the default printer is switched off. Please set a default printer first, or switch on the default printer." --title="Error"
         exit 1
@@ -45,4 +45,4 @@
 
 # Press any key to continue
 
-    # read -n 1 -s -r -p "Press any key to continue"; echo
+    read -n 1 -s -r -p "Press any key to continue"; echo

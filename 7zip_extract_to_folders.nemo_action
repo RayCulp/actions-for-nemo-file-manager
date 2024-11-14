@@ -1,7 +1,7 @@
 [Nemo Action]
 Active=true
-Name=Extract archive(s) to folder(s)
-Comment=Extract each selected archive to its own folder
+Name=Extract to separate folders using 7Zip
+Comment=Extract each selected archive to a separate folder
 Exec=<7zip_extract_to_folders/7zip_extract_to_folders.sh %F>
 Icon-Name=7zip_extract_to_folders/7zip
 Selection=notnone
