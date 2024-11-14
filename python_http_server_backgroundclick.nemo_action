@@ -1,0 +1,12 @@
+[Nemo Action]
+Active=true
+Name=Start Python HTTP server here
+Comment=Start a Python HTTP development server in this folder
+Exec=<python_http_server/python_http_server.sh %F>
+Icon-Name=
+Selection=none
+Extensions=dir;
+Terminal=true
+EscapeSpaces=false
+Quote=double
+Dependencies=python3

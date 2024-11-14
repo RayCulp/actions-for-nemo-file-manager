@@ -1,6 +1,6 @@
 [Nemo Action]
 Active=true
-Name=Rename files usingg KRename
+Name=Rename files using KRename
 Comment=Rename selected files using KRename
 Exec=flatpak run org.kde.krename %F
 Icon-Name=
