@@ -1,6 +1,6 @@
 [Nemo Action]
 Active=true
-Name=Compare with DiffPDF
+Name=Compare in DiffPDF
 Comment=Compare two selected PDFs using DiffPDF
 Exec=diffpdf %F
 Icon-Name=diffpdf
