@@ -1,6 +1,6 @@
 [Nemo Action]
 Active=true
-Name=OCR PDFs using OCRmyPDF
+Name=OCR PDFs
 Comment=OCR one or more PDF files using ocrmypdf
 Exec=<ocr_pdf/ocr_pdf.sh %F>
 Icon-Name=
