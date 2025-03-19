@@ -1,0 +1,8 @@
+# Ignore specific folders
+make-file-executable@RutarAndriy/
+run-in-terminal@alextpedro/
+
+
+# Ignore specific files
+make-file-executable@RutarAndriy.nemo_action
+run-in-terminal@alextpedro.nemo_action

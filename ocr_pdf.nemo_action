@@ -1,6 +1,6 @@
 [Nemo Action]
 Active=true
-Name=OCR PDFs
+Name=OCR PDFees
 Comment=OCR one or more PDF files using ocrmypdf
 Exec=<ocr_pdf/ocr_pdf.sh %F>
 Icon-Name=
@@ -9,4 +9,4 @@ Extensions=pdf;
 Terminal=true
 EscapeSpaces=false
 Quote=double
-Dependencies=ocrmypdf;
+Dependencies=ocrmypdf;zenity;
